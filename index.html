@@ -4,24 +4,43 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pasignart, Jasa Design Murah!!</title>
+    <title>Pasignart, Design Keren</title>
+
     <style>
-        /* Gaya untuk logo WhatsApp */
         .whatsapp-logo {
             position: fixed;
             bottom: 20px;
             right: 20px;
             z-index: 999;
-            /* Pastikan di atas elemen lain */
+        }
+
+        .boxKategori {
+            text-align: right;
+        }
+
+        #kategori {
+            width: 70%;
+            padding: 1px 0;
+            border-radius: 5px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 5px #583e30;
+            text-align: center;
+            margin: 10px 0 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .boxKategori {
+                text-align: center;
+            }
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar bg-dark navbar-expand-lg bg-body-dark fixed-top" data-bs-theme="dark">
+    <nav class="navbar bg-dark navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Pasignart</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -30,9 +49,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="desain.html">Design</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Design</a>
                     <a class="nav-link" href="ulasan.html">Ulasan</a>
+                    <a class="nav-link" href="tim.html">Tim</a>
                     <a class="nav-link" href="proses.html">Cara Pemesanan</a>
                 </div>
             </div>
@@ -41,48 +60,59 @@
 
     <a href="https://wa.me/6281934887089?text=Hallo Kak%0ASaya tertarik dengan layanan design..." class="whatsapp-logo"
         target="_blank">
-        <img src="wa.png" alt="WhatsApp" width="50" height="50">
+        <img src="img/wa.png" alt="WhatsApp" width="50" height="50">
     </a>
+
     <div class="container mt-5">
         <br>
-        <div class="row">
+        <div class="row mx-auto text-center">
             <div class="col">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-interval="2000">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                <img src="img/logo.png" alt="logo" width="120px">
+                <h1 style="color: #583e30; font-size: 40px;">Desain Kami</h1>
+                <p class="display-5" style="font-size: 20px;">Contoh hasil desain kami</p>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4 col-0"></div>
+                    <div class="col-md-4 col-0"> </div>
+                    <div class="col-md-4 col-12 boxKategori">
+                        <select id="kategori">
+                            <option value="semua">Semua</option>
+                            <option value="poster">Design Poster</option>
+                            <option value="brosur">Design Brosur</option>
+                            <option value="logo">Design Logo</option>
+                            <option value="undangan">Design Undangan</option>
+                        </select>
                     </div>
-                    <div class="carousel-inner rounded">
-                        <div class="carousel-item active">
-                            <img src="home.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="home.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="home.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </div>
+        <div id="valueKategori">
+
+        </div>
+
+
     </div>
 
-<br><br><br><br><br>
+    <div class="row mt-5 ">
+        <div class="col-md-2 col-1"></div>
+        <div class="col-md-8 col-10">
+            <div class="row border d-flex justify-content-center align-items-center"
+                style="background-color: #583e30; padding: 40px; border-radius: 30px;">
+                <div class="col-md-8 col-12 text-center text-md-start">
+                    <h1 style="color: white;">Order Sekarang</h1>
+                    <p style="color: white;">Hubungi kami untuk detail layanannya</p>
+                </div>
+                <div class="col-md-4 col-0 d-flex justify-content-center mt-2 mt-md-0 ">
+                    <a href="https://wa.me/6281934887089?text=Hallo Kak%0ASaya tertarik dengan layanan design..."
+                        class="btn btn-light" target="_blank">
+                        <span style="color: #583e30; font-weight: bold; font-size: 20px;">Hubungi Kami</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-1"></div>
+    </div>
+
 
 
     <footer class="bg-light p-5 mt-5">
@@ -90,42 +120,213 @@
             <div class="row">
                 <div class="col-md-6 text-md-start text-center pt-2 pb-2">
                     <a href="#" style="text-decoration: none;">
-                        <img src="logo-removebg-preview.png" alt="" style="width: 100px ;">
+                        <img src="img/logo.png" alt="" style="width: 100px ;">
                     </a>
-                    <span class="ps-1">Copyright @2023 | Created with <i class="fa-solid fa-heart"></i></i> love by <a href="#"
-                            class="text-decoration-none text-dark fw-bold">Pa<span class="text-warning">sign</span>art</a></span>
+                    <span class="ps-1">Copyright @2023 | Created with <i class="fa-solid fa-heart"></i></i> love by <a
+                            href="#" class="text-decoration-none text-dark fw-bold">Pa<span
+                                class="text-warning">sign</span>art</a></span>
                 </div>
-                <div class="col-md-6 text-md-end text-center d-flex justify-content-end align-items-center">
+                <div class="col-md-6 text-center d-flex justify-content-center align-items-center">
                     <a href="#" style="text-decoration: none;">
-                        <img src="ig.png" alt="" class="ms-2" style="width: 32px;">
+                        <img src="img/ig.png" style="width: 32px;">
                     </a>
                     <span class="ps-1">Pasignart</span>
-                </div>                
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mengaktifkan swipe pada carousel
-        $('#carouselExampleIndicators').on('touchstart', function (event) {
-            const xClick = event.originalEvent.touches[0].pageX;
-            $(this).one('touchmove', function (event) {
-                const xMove = event.originalEvent.touches[0].pageX;
-                if (Math.floor(xClick - xMove) > 5) {
-                    $(this).carousel('next');
-                } else if (Math.floor(xClick - xMove) < -5) {
-                    $(this).carousel('prev');
-                }
-            });
+        const poster = `
+            <div class="row text-start mt-3">
+                        <div class="col">
+                            <h1>Design Poster</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-12 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/poster/1.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/poster/2.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/poster/3.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/poster/4.avif" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-12 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/poster/5.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/poster/6.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/poster/7.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/poster/8.avif" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>`;
+
+        const brosur = `
+            <div class="row text-start mt-3">
+                        <div class="col">
+                            <h1>Design Brosur</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-12 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/brosur/1.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/brosur/2.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/brosur/3.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/brosur/4.avif" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-12 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/brosur/5.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/brosur/6.avif" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>`;
+
+        const logo = `
+            <div class="row text-start mt-3">
+                        <div class="col">
+                            <h1>Design Logo</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-12 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/logo/1.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/logo/2.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/logo/3.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/logo/4.avif" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>`;
+
+        const undangan = `
+            <div class="row text-start mt-3">
+                        <div class="col">
+                            <h1>Design Undangan</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-12 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/undangan/1.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/undangan/2.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/undangan/3.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/undangan/4.avif" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-12 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/undangan/5.avif" class="card-img-top">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-0 mt-2">
+                            <div class="card mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
+                                <img src="img/design/undangan/6.avif" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>`;
+
+        const semua = `
+            <div class="row text-center">
+                        <div class="col">
+                            <h1 class="display-5">- Semua Design -</h1>
+                        </div>
+                    </div>` + poster + brosur + logo + undangan;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("valueKategori").innerHTML = semua;
         });
-        $('#carouselExampleIndicators').on('touchend', function () {
-            $(this).off('touchmove');
+
+        document.addEventListener("change", function () {
+            let pilihan = document.getElementById("kategori").value;
+            if (pilihan == 'semua') {
+                pilihan = semua;
+            } else if (pilihan == 'poster') {
+                pilihan = poster;
+            } else if (pilihan == 'brosur') {
+                pilihan = brosur;
+            } else if (pilihan == 'logo') {
+                pilihan = logo;
+            } else if (pilihan == 'undangan') {
+                pilihan = undangan;
+            }
+
+            document.getElementById("valueKategori").innerHTML = pilihan;
         });
     </script>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
